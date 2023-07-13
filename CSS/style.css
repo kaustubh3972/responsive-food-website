@@ -1,0 +1,208 @@
+/* CSS Reset */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+#navbar {
+	display: flex;
+	align-items: center;
+	top: 0px;
+	position: sticky;
+}
+#navbar::before {
+	content: "";
+	background-color: #0000008c;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	opacity: 0.6;
+}
+
+/* Logo And image */
+#logo img {
+	height: 110px;
+	width: 110px;
+	margin: 10px 40px;
+	margin-right: 10px;
+	border-radius: 55px;
+}
+
+/* Navigation item style */
+ul {
+	display: flex;
+	list-style: none;
+	font-family: "Playfair Display SC", serif;
+}
+li {
+	font-size: 1.3rem;
+}
+a {
+	text-decoration: none;
+	padding: 10px 25px;
+	color: white;
+	display: block;
+}
+a:hover {
+	background-color: white;
+	color: black;
+	border-radius: 50px;
+	text-decoration: underline;
+}
+
+/* Home Section */
+#home {
+	display: flex;
+	flex-direction: column;
+	padding: 1.5% 15%;
+	justify-content: center;
+	align-items: center; /* button center */
+	height: 15rem;
+	font-family: "Germania One", cursive;
+	text-align: center;
+}
+#home::before {
+	content: "";
+	position: absolute;
+	background: url("../Images/bg_img.jpg") no-repeat center center/cover;
+	opacity: 0.9;
+	height: 29rem;
+	width: 100%;
+	z-index: -1;
+	top: 0px;
+	left: 0px;
+}
+#home p {
+	font-size: 1.5em;
+}
+.h-primary {
+	font-size: 3rem;
+	padding: 10px;
+	font-family: "Germania One", cursive;
+	text-align: center;
+}
+
+/* Button */
+.btn {
+	padding: 5px 20px;
+	margin: 10px;
+	font-size: 1.3rem;
+	background-color: #951800;
+	border: 2px solid white;
+	box-shadow: 1px 1px;
+	border-radius: 20px;
+	color: white;
+	cursor: pointer;
+}
+
+/* Services Section */
+.services .h-primary {
+	margin-top: 2.5rem;
+}
+.center {
+	font-family: "Germania One", cursive;
+	text-align: center;
+}
+#services {
+	display: flex;
+	margin: 15px;
+	margin-bottom: 40px;
+	font-size: 1.2rem;
+}
+#services .box {
+	border: 2px solid red;
+	margin: 5px 10px;
+	padding: 15px 25px;
+	border-radius: 30px;
+	cursor: pointer;
+	background-color: rgb(240, 212, 190);
+}
+#services img {
+	height: 100px;
+	width: 100px;
+	border-radius: 50px;
+	display: block;
+	margin: auto;
+}
+
+/* Client-Section */
+#client-section {
+	position: relative;
+	z-index: -1;
+}
+#client-section::before {
+	content: "";
+	position: absolute;
+	background: url(../Images/spices.jpg);
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.9;
+}
+#client-section .h-primary {
+	color: white;
+}
+#clients {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#clients img {
+	height: 85px;
+}
+.client-item {
+	padding: 15px;
+}
+
+/* Contact Section */
+#contact {
+	position: relative;
+	z-index: -1;
+}
+#contact::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.8;
+	background: url(../Images/contact_bg.jpg) no-repeat center center/cover;
+}
+#contact-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+	padding-top: 0px;
+}
+#contact-box form {
+	width: 40%;
+}
+#contact-box label {
+	font-size: 1.2rem;
+	font-family: "Playfair Display SC", serif;
+}
+#contact-box input,
+#contact-box textarea {
+	width: 96%;
+	padding: 0.5rem;
+	border-radius: 10px;
+	font-size: 1.2rem;
+}
+#contact-box textarea {
+	height: 50px;
+}
+
+/* Footer */
+footer {
+	background: black;
+	color: white;
+	padding: 10px 20px;
+}
